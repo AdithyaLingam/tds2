@@ -1,4 +1,4 @@
-name: Hello World Workflow
+name: "24f1002079@ds.study.iitm.ac.in"
 
 # Trigger the workflow on push or pull request to the main branch
 on:
