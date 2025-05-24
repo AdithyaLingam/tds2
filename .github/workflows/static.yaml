@@ -1,24 +1,17 @@
-name: "24f1002079@ds.study.iitm.ac.in"
+name: Hello World Workflow
 
-# Trigger the workflow on push or pull request to the main branch
 on:
   push:
     branches:
-      - main  # Trigger when code is pushed to the 'main' branch
-  pull_request:
-    branches:
-      - main  # Trigger when a pull request targets the 'main' branch
+      - main  # This triggers the action on a push to the 'main' branch.
 
 jobs:
-  hello-world-job:
-    runs-on: ubuntu-latest  # The job runs on an Ubuntu runner in the cloud
+  test:
+    runs-on: ubuntu-latest  # The job runs on an Ubuntu virtual machine.
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2  # Checks out the code from the repository
+      - name: Print "Hello, world!"
+        run: echo "Hello, world!"  # This prints the desired "Hello, world!" message.
 
-      - name: Print Hello World
-        run: echo "Hello, world!"  # The command that prints "Hello, world!" to the console
-
-      - name: Add a custom step with your identifier
-        run: echo "24f1002079@ds.study.iitm.ac.in"
+      - name: Print the custom email
+        run: echo "24f1002079@ds.study.iitm.ac.in"  # This prints your email message.
